@@ -459,7 +459,8 @@ class Spectrogram():
         if not self.plot_params_set:
             self.set_plot_params()
 
-        Fig = pu.Figure(fig_size=self.fig_size, ratio=self.ratio, dpi=self.dpi, show=False, facecolor=self.facecolor)
+        Fig = pu.Figure(fig_size=self.fig_size, ratio=self.ratio, dpi=self.dpi, facecolor=self.facecolor)
+        # Fig = pu.Figure(fig_size=self.fig_size, ratio=self.ratio, dpi=self.dpi, show=False, facecolor=self.facecolor)
         ax = Fig.ax
         fs = Fig.fs
         self.fig = Fig.fig
